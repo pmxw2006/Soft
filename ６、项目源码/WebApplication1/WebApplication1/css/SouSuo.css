@@ -1,0 +1,118 @@
+﻿
+/* 搜索区域 */
+.SouSuoQuYu {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.CaoZuoQuBiaoTi {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #4CAF50;
+    display: inline-block;
+}
+
+.SouSuoPaiBan {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.SouSuoTiaoJian {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.SouSuoBiaoQian {
+    font-weight: bold;
+    color: #555;
+    min-width: 80px;
+}
+
+.SouSuoShuRu {
+    padding: 8px 12px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.SouSuoXiaLa {
+    padding: 8px 12px;
+    width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+/* 按钮样式 */
+.AnNiuXiao {
+    padding: 5px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s;
+    min-width: 70px;
+}
+
+.AnNiuJiChu {
+    background-color: #007bff;
+    color: white;
+}
+
+    .AnNiuJiChu:hover {
+        background-color: #0056b3;
+        box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+    }
+
+.AnNiuChengGong {
+    background-color: #28a745;
+    color: white;
+}
+
+    .AnNiuChengGong:hover {
+        background-color: #1e7e34;
+        box-shadow: 0 2px 5px rgba(40, 167, 69, 0.3);
+    }
+
+.AnNiuJingGao {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+    .AnNiuJingGao:hover {
+        background-color: #e0a800;
+        box-shadow: 0 2px 5px rgba(255, 193, 7, 0.3);
+    }
+
+.AnNiuWeiXian {
+    background-color: #dc3545;
+    color: white;
+}
+
+    .AnNiuWeiXian:hover {
+        background-color: #bd2130;
+        box-shadow: 0 2px 5px rgba(220, 53, 69, 0.3);
+    }
+
+.AnNiuJianJie {
+    background-color: #6c757d;
+    color: white;
+}
+
+    .AnNiuJianJie:hover {
+        background-color: #545b62;
+        box-shadow: 0 2px 5px rgba(108, 117, 125, 0.3);
+    }

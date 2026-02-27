@@ -1,0 +1,290 @@
+﻿/* 成功/失败提示样式 - 使用账户页面的样式 */
+.TiShiKuang {
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ChengGongTiShi {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.CuoWuTiShi {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* 借出特有样式 */
+.MoKuaiBiaoTi, .CaoZuoQuBiaoTi {
+    border-bottom: 2px solid #4CAF50;
+}
+
+.TianJiaBiaoDan {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.BiaoDanHang {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.BiaoQian {
+    width: 120px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.ShuRuKong {
+    flex: 1;
+    position: relative;
+}
+
+.tishi {
+    display: block;
+    font-size: 12px;
+    color: #dc3545;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+.ShuRuKuang, .XiaLaKuang, .ZhiDuKuang {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+    .ShuRuKuang.error, .XiaLaKuang.error {
+        border-color: #dc3545;
+        background-color: #fff8f8;
+    }
+
+    .ShuRuKuang:focus, .XiaLaKuang:focus {
+        border-color: #4CAF50;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+    }
+
+.ZhiDuKuang {
+    background-color: #f8f9fa;
+    color: #666;
+    cursor: not-allowed;
+    user-select: none;
+}
+
+.AnNiuQu {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.AnNiuDa {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s;
+    min-width: 120px;
+}
+
+.AnNiuChengGong {
+    background-color: #4CAF50;
+    color: white;
+}
+
+    .AnNiuChengGong:hover {
+        background-color: #45a049;
+        box-shadow: 0 2px 5px rgba(76, 175, 80, 0.3);
+    }
+
+.AnNiuQuXiao {
+    background-color: #6c757d;
+    color: white;
+}
+
+    .AnNiuQuXiao:hover {
+        background-color: #545b62;
+        box-shadow: 0 2px 5px rgba(108, 117, 125, 0.3);
+    }
+
+.BiTianXiang::after {
+    content: "*";
+    color: #dc3545;
+    margin-left: 3px;
+}
+
+@media (max-width: 768px) {
+    .TianJiaBiaoDan {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .BiaoDanHang {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .BiaoQian {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .AnNiuDa {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+/* 新增借出界面样式 */
+.MoKuaiBiaoTi, .CaoZuoQuBiaoTi {
+    border-bottom: 2px solid #ff9800;
+}
+
+/* 表单样式 */
+.TianJiaBiaoDan {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.BiaoDanHang {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.BiaoQian {
+    width: 120px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.ShuRuKong {
+    flex: 1;
+}
+
+.ShuRuKuang, .XiaLaKuang, .ZhiDuKuang {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+    .ShuRuKuang:focus, .XiaLaKuang:focus, .ZhiDuKuang:focus {
+        border-color: #ff9800;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(255, 152, 0, 0.1);
+    }
+
+/* 按钮样式 */
+.AnNiuQu {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.AnNiuDa {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s;
+    min-width: 120px;
+}
+
+.AnNiuChengGong {
+    background-color: #ff9800;
+    color: white;
+}
+
+    .AnNiuChengGong:hover {
+        background-color: #e68900;
+        box-shadow: 0 2px 5px rgba(255, 152, 0, 0.3);
+    }
+
+.AnNiuQuXiao {
+    background-color: #6c757d;
+    color: white;
+}
+
+    .AnNiuQuXiao:hover {
+        background-color: #545b62;
+        box-shadow: 0 2px 5px rgba(108, 117, 125, 0.3);
+    }
+
+/* 必填项标识 */
+.BiTianXiang::after {
+    content: "*";
+    color: #dc3545;
+    margin-left: 3px;
+}
+
+/* 错误提示 */
+.CuoWuTiShi {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .TianJiaBiaoDan {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .BiaoDanHang {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .BiaoQian {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .AnNiuDa {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

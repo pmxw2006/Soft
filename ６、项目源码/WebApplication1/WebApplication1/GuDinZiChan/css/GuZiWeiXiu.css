@@ -1,0 +1,104 @@
+﻿.MoKuaiBiaoTi, .CaoZuoQuBiaoTi {
+    border-bottom: 2px solid #e68900;
+}
+
+/* 维修状态样式 */
+.WeiXiuZhuangTai {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ZhuangTaiWeiXiuZhong {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.ZhuangTaiYiWanCheng {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.ZhuangTaiYiChaoQi {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* 日期样式 */
+.RiQiZhi {
+    font-family: 'Consolas', monospace;
+    color: #666;
+}
+
+/* 金额样式 */
+.JinEZhi {
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+/* 新增和查询按钮 */
+.TianJiaHeChaXunPaiBan {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.XingZenYongHu a {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+    .XingZenYongHu a:hover {
+        background-color: #e68900;
+        box-shadow: 0 2px 5px rgba(255, 152, 0, 0.3);
+    }
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+    .DaHeZi {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .SouSuoTiaoJian {
+        flex: 1 1 200px;
+    }
+
+    .SouSuoShuRu {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .MoKuaiBiaoTi h2 {
+        font-size: 20px;
+    }
+
+    .SouSuoPaiBan {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .AnNiuXiao {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .BiaoDan table td {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+
+.auto-style1 {
+    width: 168px;
+}

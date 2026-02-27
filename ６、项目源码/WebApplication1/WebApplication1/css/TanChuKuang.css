@@ -1,0 +1,216 @@
+﻿/* 删除模态框样式 */
+.shan-chu-mo-tai {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+}
+
+    .shan-chu-mo-tai.xian-shi {
+        display: flex;
+    }
+
+.mo-tai-nei-rong {
+    background-color: white;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: tan-chu 0.3s ease-out;
+}
+
+@keyframes tan-chu {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.mo-tai-biao-ti {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.mo-tai-ti-shi {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+.guan-bi {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #6c757d;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 24px;
+    border-radius: 50%;
+}
+
+    .guan-bi:hover {
+        background-color: #e9ecef;
+        color: #495057;
+    }
+
+.mo-tai-ti {
+    padding: 25px 30px;
+    text-align: center;
+}
+
+.jing-gao-tu-biao {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background-color: #ffeaea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .jing-gao-tu-biao svg {
+        width: 40px;
+        height: 40px;
+    }
+
+.mo-tai-ti h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.mo-tai-wen-zi {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.yong-hu-xin-xi {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.xin-xi-hang {
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+    .xin-xi-hang:last-child {
+        margin-bottom: 0;
+    }
+
+.xin-xi-biao-qian {
+    color: #666;
+    min-width: 80px;
+}
+
+.xin-xi-zhi {
+    color: #333;
+    font-weight: 500;
+}
+
+.que-ren-quan {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.que-ren-biao-qian {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #555;
+    font-size: 14px;
+}
+
+    .que-ren-biao-qian input[type="checkbox"] {
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+
+.mo-tai-jiao {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 30px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    gap: 10px;
+}
+
+.an-niu {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    min-width: 100px;
+    transition: all 0.3s;
+}
+
+.an-niu-fu-zhu {
+    background-color: #6c757d;
+    color: white;
+}
+
+    .an-niu-fu-zhu:hover {
+        background-color: #545b62;
+    }
+
+.an-niu-wei-xian {
+    background-color: #dc3545;
+    color: white;
+}
+
+    .an-niu-wei-xian:hover {
+        background-color: #bd2130;
+    }
+
+    .an-niu-wei-xian:disabled {
+        background-color: #e9ecef;
+        color: #adb5bd;
+        cursor: not-allowed;
+    }
+
+/* 移动端适配 */
+@media (max-width: 576px) {
+    .mo-tai-nei-rong {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .mo-tai-ti {
+        padding: 20px 15px;
+    }
+
+    .mo-tai-jiao {
+        flex-direction: column;
+    }
+
+    .an-niu {
+        width: 100%;
+    }
+}

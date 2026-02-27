@@ -1,0 +1,127 @@
+﻿.ge-ren-zhong-xin {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.tou-bu {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+    .tou-bu h2 {
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .tou-bu .fu-biao-ti {
+        color: #666;
+        font-size: 14px;
+    }
+
+.xin-xi-qu {
+    margin-bottom: 25px;
+}
+
+.xin-xi-biao-ti {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #4CAF50;
+    display: inline-block;
+}
+
+.xin-xi-xiang-mu {
+    margin-bottom: 20px;
+}
+
+.xin-xi-biao-qian {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.wen-ben-shu-ru {
+    padding: 10px 15px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+    /* 错误状态样式 */
+    .wen-ben-shu-ru.error {
+        border-color: #ff4757;
+    }
+
+/* 提示信息样式 */
+.tishi {
+    color: #ff4757;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+.an-niu-zu {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.an-niu-ji-chu {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+}
+
+    .an-niu-ji-chu:hover {
+        background-color: #0056b3;
+    }
+
+/* 消息面板样式 */
+.xiao-xi-pan {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.xiao-xi-cheng-gong {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.xiao-xi-cuo-wu {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.fan-hui-lian-jie {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .ge-ren-zhong-xin {
+        padding: 20px;
+        margin: 20px;
+        max-width: 100%;
+    }
+}

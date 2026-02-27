@@ -1,0 +1,27 @@
+﻿/* 人员管理模块样式 */
+.DaHeZi {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* 模块标题 */
+.MoKuaiBiaoTi {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #4CAF50;
+}
+
+    .MoKuaiBiaoTi h2 {
+        color: #333;
+        margin-bottom: 5px;
+        font-size: 24px;
+    }
+
+    .MoKuaiBiaoTi .fu-biao-ti {
+        color: #666;
+        font-size: 14px;
+    }

@@ -1,0 +1,390 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F2C9497-1ABE-4F8A-9228-7AB3547DE262}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44330</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\BiaoDan.css" />
+    <Content Include="css\DaHeZi.css" />
+    <Content Include="css\FenYeYangShi.css" />
+    <Content Include="GuDinZiChan\css\GuZiJieHuan.css" />
+    <Content Include="css\SouSuo.css" />
+    <Content Include="css\TanChuKuang.css" />
+    <Content Include="DengLu\css\DengLuYe.css" />
+    <Content Include="DengLu\css\WangJiMiMa.css" />
+    <Content Include="DengLu\DengLuYe.aspx" />
+    <Content Include="DengLu\js\jquery-3.3.1.min.js" />
+    <Content Include="DengLu\TuiChu.aspx" />
+    <Content Include="DengLu\WangJiMiMa.aspx" />
+    <Content Include="GuDinZiChan\css\GeRenXinXi.css" />
+    <Content Include="GuDinZiChan\css\GuZiWeiXiu.css" />
+    <Content Include="GuDinZiChan\css\TianJiaGuiHuan.css" />
+    <Content Include="GuDinZiChan\css\TianJiaJieChu.css" />
+    <Content Include="GuDinZiChan\css\TianJiaWeiXiu.css" />
+    <Content Include="GuDinZiChan\css\XinZenZiChan.css" />
+    <Content Include="GuDinZiChan\css\XiuGaiMiMa.css" />
+    <Content Include="GuDinZiChan\css\ZiCHanZHuTi.css" />
+    <Content Include="GuDinZiChan\GeRenZhongXin\GeRenXinXi.aspx" />
+    <Content Include="GuDinZiChan\GeRenZhongXin\XiuGaiMiMa.aspx" />
+    <Content Include="GuDinZiChan\GuDingZiChanTongJi\ChaXunJeiHuanZiChan.aspx" />
+    <Content Include="GuDinZiChan\GuDingZiChanTongJi\ChaXunWeiXiuZiChan.aspx" />
+    <Content Include="GuDinZiChan\GuDingZiChanTongJi\ChaXunZaiKuZiChan.aspx" />
+    <Content Include="GuDinZiChan\GuDinZiChanChaoZuo\XinZenZiChan.aspx" />
+    <Content Include="GuDinZiChan\GuDinZiChanChaoZuo\ZiChanZhuTi.aspx" />
+    <Content Include="GuDinZiChan\GuZiJieHuan\GuZiJieHuan.aspx" />
+    <Content Include="GuDinZiChan\GuZiJieHuan\TianJiaGuiHuan.aspx" />
+    <Content Include="GuDinZiChan\GuZiJieHuan\TianJiaJieChu.aspx" />
+    <Content Include="GuDinZiChan\GuZiWeiXiu\GuZiWeiXiu.aspx" />
+    <Content Include="GuDinZiChan\GuZiWeiXiu\TianJiaWeiXiu.aspx" />
+    <Content Include="GuDinZiChan\js\jquery-3.3.1.min.js" />
+    <Content Include="GuDinZiChan\ZhuTi.aspx" />
+    <Content Include="Js\TanChuKuang.js" />
+    <Content Include="MuBanYe\css\GuDinZiChan.css" />
+    <Content Include="MuBanYe\css\XiTong.css" />
+    <Content Include="MuBanYe\js\jquery-3.3.1.min.js" />
+    <Content Include="ShuJuKu\Soft.mdf" />
+    <Content Include="ShuJuKu\Soft_log.ldf">
+      <DependentUpon>Soft.mdf</DependentUpon>
+    </Content>
+    <Content Include="ShuJuKu\SQLQuery1.sql" />
+    <Content Include="Web.config" />
+    <Content Include="XiTong\CangKuGuanLi\CangKuXioGai.aspx" />
+    <Content Include="XiTong\CangKuGuanLi\XingZenCangKuFenLei.aspx" />
+    <Content Include="XiTong\CangKuGuanLi\XinZengCangKu.aspx" />
+    <Content Include="XiTong\CangKuGuanLi\ZiChanTongJi.aspx" />
+    <Content Include="XiTong\css\CangKuXioGai.css" />
+    <Content Include="XiTong\css\GeRenZhongXin.css" />
+    <Content Include="XiTong\css\RenYuanGuanLi.css" />
+    <Content Include="XiTong\css\TianJiaZhangHu.css" />
+    <Content Include="XiTong\css\XingZenCangKuFenLei.css" />
+    <Content Include="XiTong\css\XinZengCangKu.css" />
+    <Content Include="XiTong\css\XiuGaiMiMa.css" />
+    <Content Include="XiTong\css\ZiCHanTongJi.css" />
+    <Content Include="XiTong\GeRenZhongXin\GeRenXinXi.aspx" />
+    <Content Include="XiTong\GeRenZhongXin\XiuGaiMiMa.aspx" />
+    <Content Include="XiTong\js\jquery-3.3.1.min.js" />
+    <Content Include="XiTong\RenYuanGuanLi\RenYuanGuanLi.aspx" />
+    <Content Include="XiTong\RenYuanGuanLi\TianJiaZhangHu.aspx" />
+    <Content Include="XiTong\ZhuTi.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="DengLu\DengLuYe.aspx.cs">
+      <DependentUpon>DengLuYe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DengLu\DengLuYe.aspx.designer.cs">
+      <DependentUpon>DengLuYe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DengLu\TuiChu.aspx.cs">
+      <DependentUpon>TuiChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DengLu\TuiChu.aspx.designer.cs">
+      <DependentUpon>TuiChu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DengLu\WangJiMiMa.aspx.cs">
+      <DependentUpon>WangJiMiMa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DengLu\WangJiMiMa.aspx.designer.cs">
+      <DependentUpon>WangJiMiMa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuDinZiChan\GeRenZhongXin\GeRenXinXi.aspx.cs">
+      <DependentUpon>GeRenXinXi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuDinZiChan\GeRenZhongXin\GeRenXinXi.aspx.designer.cs">
+      <DependentUpon>GeRenXinXi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuDinZiChan\GeRenZhongXin\XiuGaiMiMa.aspx.cs">
+      <DependentUpon>XiuGaiMiMa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuDinZiChan\GeRenZhongXin\XiuGaiMiMa.aspx.designer.cs">
+      <DependentUpon>XiuGaiMiMa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuDingZiChanTongJi\ChaXunJeiHuanZiChan.aspx.cs">
+      <DependentUpon>ChaXunJeiHuanZiChan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuDingZiChanTongJi\ChaXunJeiHuanZiChan.aspx.designer.cs">
+      <DependentUpon>ChaXunJeiHuanZiChan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuDingZiChanTongJi\ChaXunWeiXiuZiChan.aspx.cs">
+      <DependentUpon>ChaXunWeiXiuZiChan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuDingZiChanTongJi\ChaXunWeiXiuZiChan.aspx.designer.cs">
+      <DependentUpon>ChaXunWeiXiuZiChan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuDingZiChanTongJi\ChaXunZaiKuZiChan.aspx.cs">
+      <DependentUpon>ChaXunZaiKuZiChan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuDingZiChanTongJi\ChaXunZaiKuZiChan.aspx.designer.cs">
+      <DependentUpon>ChaXunZaiKuZiChan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuDinZiChanChaoZuo\XinZenZiChan.aspx.cs">
+      <DependentUpon>XinZenZiChan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuDinZiChanChaoZuo\XinZenZiChan.aspx.designer.cs">
+      <DependentUpon>XinZenZiChan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuDinZiChanChaoZuo\ZiChanZhuTi.aspx.cs">
+      <DependentUpon>ZiChanZhuTi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuDinZiChanChaoZuo\ZiChanZhuTi.aspx.designer.cs">
+      <DependentUpon>ZiChanZhuTi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuZiJieHuan\GuZiJieHuan.aspx.cs">
+      <DependentUpon>GuZiJieHuan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuZiJieHuan\GuZiJieHuan.aspx.designer.cs">
+      <DependentUpon>GuZiJieHuan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuZiJieHuan\TianJiaGuiHuan.aspx.cs">
+      <DependentUpon>TianJiaGuiHuan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuZiJieHuan\TianJiaGuiHuan.aspx.designer.cs">
+      <DependentUpon>TianJiaGuiHuan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuZiJieHuan\TianJiaJieChu.aspx.cs">
+      <DependentUpon>TianJiaJieChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuZiJieHuan\TianJiaJieChu.aspx.designer.cs">
+      <DependentUpon>TianJiaJieChu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuZiWeiXiu\GuZiWeiXiu.aspx.cs">
+      <DependentUpon>GuZiWeiXiu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuZiWeiXiu\GuZiWeiXiu.aspx.designer.cs">
+      <DependentUpon>GuZiWeiXiu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuZiWeiXiu\TianJiaWeiXiu.aspx.cs">
+      <DependentUpon>TianJiaWeiXiu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuDinZiChan\GuZiWeiXiu\TianJiaWeiXiu.aspx.designer.cs">
+      <DependentUpon>TianJiaWeiXiu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuDinZiChan\ZhuTi.aspx.cs">
+      <DependentUpon>ZhuTi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuDinZiChan\ZhuTi.aspx.designer.cs">
+      <DependentUpon>ZhuTi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MuBanYe\GuDinZiChan.Master.cs">
+      <DependentUpon>GuDinZiChan.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MuBanYe\GuDinZiChan.Master.designer.cs">
+      <DependentUpon>GuDinZiChan.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MuBanYe\XiTong.Master.cs">
+      <DependentUpon>XiTong.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MuBanYe\XiTong.Master.designer.cs">
+      <DependentUpon>XiTong.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XiTong\CangKuGuanLi\CangKuXioGai.aspx.cs">
+      <DependentUpon>CangKuXioGai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XiTong\CangKuGuanLi\CangKuXioGai.aspx.designer.cs">
+      <DependentUpon>CangKuXioGai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XiTong\CangKuGuanLi\XingZenCangKuFenLei.aspx.cs">
+      <DependentUpon>XingZenCangKuFenLei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XiTong\CangKuGuanLi\XingZenCangKuFenLei.aspx.designer.cs">
+      <DependentUpon>XingZenCangKuFenLei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XiTong\CangKuGuanLi\XinZengCangKu.aspx.cs">
+      <DependentUpon>XinZengCangKu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XiTong\CangKuGuanLi\XinZengCangKu.aspx.designer.cs">
+      <DependentUpon>XinZengCangKu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XiTong\CangKuGuanLi\ZiChanTongJi.aspx.cs">
+      <DependentUpon>ZiChanTongJi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XiTong\CangKuGuanLi\ZiChanTongJi.aspx.designer.cs">
+      <DependentUpon>ZiChanTongJi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XiTong\GeRenZhongXin\GeRenXinXi.aspx.cs">
+      <DependentUpon>GeRenXinXi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XiTong\GeRenZhongXin\GeRenXinXi.aspx.designer.cs">
+      <DependentUpon>GeRenXinXi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XiTong\GeRenZhongXin\XiuGaiMiMa.aspx.cs">
+      <DependentUpon>XiuGaiMiMa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XiTong\GeRenZhongXin\XiuGaiMiMa.aspx.designer.cs">
+      <DependentUpon>XiuGaiMiMa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XiTong\RenYuanGuanLi\RenYuanGuanLi.aspx.cs">
+      <DependentUpon>RenYuanGuanLi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XiTong\RenYuanGuanLi\RenYuanGuanLi.aspx.designer.cs">
+      <DependentUpon>RenYuanGuanLi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XiTong\RenYuanGuanLi\TianJiaZhangHu.aspx.cs">
+      <DependentUpon>TianJiaZhangHu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XiTong\RenYuanGuanLi\TianJiaZhangHu.aspx.designer.cs">
+      <DependentUpon>TianJiaZhangHu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XiTong\ZhuTi.aspx.cs">
+      <DependentUpon>ZhuTi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XiTong\ZhuTi.aspx.designer.cs">
+      <DependentUpon>ZhuTi.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MuBanYe\GuDinZiChan.Master" />
+    <Content Include="MuBanYe\XiTong.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{09e856aa-774d-4eb4-b338-6cd57fa47983}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{f1422988-20c0-4497-90ff-dcd532c3c130}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mods\Model.csproj">
+      <Project>{2ba529a8-b5f4-44b4-bc9c-597bfaf21f3a}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58080</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44330/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

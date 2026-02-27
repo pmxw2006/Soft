@@ -1,0 +1,261 @@
+﻿/* 重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+}
+
+/* 主体样式 */
+body {
+    background: linear-gradient(135deg, #1e5799 0%, #207cca 51%, #2989d8 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 登录容器 */
+.denglu-rongqi {
+    width: 100%;
+    max-width: 450px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* 淡入动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 登录头部 */
+.denglu-toubu {
+    background: linear-gradient(to right, #2c80d5, #3a9efd);
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+    .denglu-toubu h1 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .denglu-toubu p {
+        font-size: 14px;
+        opacity: 0.9;
+    }
+
+/* 登录主体 */
+.denglu-zhuti {
+    padding: 30px;
+}
+
+/* 表单组 */
+.biaodan-zu {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+    .biaodan-zu label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #333;
+        font-size: 14px;
+    }
+
+.biaodan-kongzhi {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+    .biaodan-kongzhi:focus {
+        border-color: #3a9efd;
+        box-shadow: 0 0 0 2px rgba(58, 158, 253, 0.2);
+        outline: none;
+    }
+
+    /* 错误状态样式 */
+    .biaodan-kongzhi.error {
+        border-color: #ff4757;
+    }
+
+        .biaodan-kongzhi.error:focus {
+            border-color: #ff4757;
+            box-shadow: 0 0 0 2px rgba(255, 71, 87, 0.2);
+        }
+
+/* 表单选项 */
+.biaodan-xuanxiang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* 返回登录链接 */
+.fanhui {
+    color: #3a9efd;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+    .fanhui:hover {
+        color: #2c80d5;
+        text-decoration: underline;
+    }
+
+/* 修改密码按钮 */
+.denglu-anniu {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #2c80d5, #3a9efd);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+    .denglu-anniu:hover {
+        background: linear-gradient(to right, #2672c0, #2c80d5);
+        box-shadow: 0 4px 12px rgba(44, 128, 213, 0.4);
+    }
+
+    .denglu-anniu:active {
+        transform: translateY(1px);
+    }
+
+    .denglu-anniu:disabled {
+        background: #cccccc;
+        cursor: not-allowed;
+        box-shadow: none;
+    }
+
+/* 提示信息样式 */
+.tishi {
+    color: #ff4757;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+/* 密码强度提示 */
+.mima-qiangdu {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+    .mima-qiangdu.ruo {
+        color: #ff4757;
+    }
+
+    .mima-qiangdu.zhong {
+        color: #ffa502;
+    }
+
+    .mima-qiangdu.qiang {
+        color: #2ed573;
+    }
+
+/* 响应式设计 */
+@media (max-width: 480px) {
+    .denglu-rongqi {
+        max-width: 100%;
+    }
+
+    .denglu-zhuti {
+        padding: 20px;
+    }
+
+    .denglu-toubu {
+        padding: 20px 15px;
+    }
+
+        .denglu-toubu h1 {
+            font-size: 20px;
+        }
+
+        .denglu-toubu p {
+            font-size: 12px;
+        }
+}
+
+@media (max-width: 360px) {
+    .denglu-zhuti {
+        padding: 15px;
+    }
+
+    .biaodan-kongzhi {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .denglu-anniu {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+/* 加载动画 */
+.jiazai-donghua {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3a9efd;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 成功提示 */
+.chenggong-tishi {
+    color: #2ed573;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(46, 213, 115, 0.1);
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+/* 表单组之间的间隔调整 */
+.biaodan-zu:last-of-type {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,58 @@
+﻿
+/* 新增和查询按钮区域 */
+.TianJiaHeChaXunPaiBan {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 15px;
+}
+
+.XingZenYongHu a {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+    .XingZenYongHu a:hover {
+        background-color: #1e7e34;
+        box-shadow: 0 2px 5px rgba(40, 167, 69, 0.3);
+    }
+/* 分页样式 */
+.FenYeKongZhi {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.FenYeAnNiu {
+    padding: 5px 12px;
+    margin: 0 3px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 14px;
+    height: 40px;
+}
+
+    .FenYeAnNiu:hover {
+        background-color: #007bff;
+        color: white;
+        border-color: #007bff;
+    }
+
+    .FenYeAnNiu:disabled {
+        background-color: #f8f9fa;
+        color: #6c757d;
+        cursor: not-allowed;
+        border-color: #ddd;
+    }

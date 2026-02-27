@@ -1,0 +1,230 @@
+﻿.xin-zen-zi-chan {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.tou-bu {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+    .tou-bu h2 {
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .tou-bu .fu-biao-ti {
+        color: #666;
+        font-size: 14px;
+    }
+
+.xin-xi-qu {
+    margin-bottom: 25px;
+}
+
+.xin-xi-biao-ti {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #4CAF50;
+    display: inline-block;
+}
+
+.xin-xi-wang-ge {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.xin-xi-xiang-mu {
+    margin-bottom: 20px;
+}
+
+.xin-xi-biao-qian {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.xin-xi-zhi {
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    min-height: 40px;
+    line-height: 20px;
+}
+
+.bian-ji-kuang {
+    padding: 10px 15px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.xia-la-xuan-ze {
+    padding: 10px 15px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.zhi-du {
+    background-color: #f5f5f5;
+    color: #888;
+}
+
+.an-niu-zu {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.an-niu-ji-chu, .an-niu-ya-se, .an-niu-cheng-gong {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 10px;
+    min-width: 120px;
+    transition: all 0.3s;
+}
+
+.an-niu-ji-chu {
+    background-color: #007bff;
+    color: white;
+}
+
+    .an-niu-ji-chu:hover {
+        background-color: #0056b3;
+    }
+
+.an-niu-cheng-gong {
+    background-color: #28a745;
+    color: white;
+}
+
+    .an-niu-cheng-gong:hover {
+        background-color: #1e7e34;
+    }
+
+.an-niu-ya-se {
+    background-color: #6c757d;
+    color: white;
+}
+
+    .an-niu-ya-se:hover {
+        background-color: #545b62;
+    }
+
+.an-niu-ji-chu:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.xiao-xi-pan {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+.xiao-xi-cheng-gong {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.xiao-xi-cuo-wu {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.tiao-zhuan-lian-jie {
+    display: inline-block;
+    margin-left: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    .tiao-zhuan-lian-jie:hover {
+        text-decoration: underline;
+    }
+
+.fan-hui-lian-jie {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    .fan-hui-lian-jie:hover {
+        text-decoration: underline;
+    }
+
+@media (max-width: 768px) {
+    .xin-zen-zi-chan {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .xin-xi-wang-ge {
+        grid-template-columns: 1fr;
+    }
+
+    .an-niu-zu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .an-niu-ji-chu, .an-niu-cheng-gong, .an-niu-ya-se {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+.tishi {
+    color: #ff4757;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+.bian-ji-kuang.error {
+    border-color: #ff4757;
+}
+
+    .bian-ji-kuang.error:focus {
+        border-color: #ff4757;
+        box-shadow: 0 0 0 2px rgba(255, 71, 87, 0.2);
+    }
+
+.xia-la-xuan-ze.error {
+    border-color: #ff4757;
+}
+
+    .xia-la-xuan-ze.error:focus {
+        border-color: #ff4757;
+        box-shadow: 0 0 0 2px rgba(255, 71, 87, 0.2);
+    }

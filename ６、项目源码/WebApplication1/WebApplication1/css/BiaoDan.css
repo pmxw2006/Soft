@@ -1,0 +1,57 @@
+﻿
+/* 表格容器 */
+.BiaoDan {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+    /* 表格样式 */
+    .BiaoDan table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 900px;
+    }
+
+        /* 表格标题行样式 */
+        .BiaoDan table tr:first-child {
+            background-color: #f8f9fa;
+            color: #333;
+            font-weight: bold;
+        }
+
+            .BiaoDan table tr:first-child td {
+                padding: 12px 15px;
+                text-align: center;
+                border: 1px solid #dee2e6;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+        /* 表格数据行样式 */
+        .BiaoDan table td {
+            padding: 10px 15px;
+            border: 1px solid #dee2e6;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        /* 表格行交替颜色 */
+        .BiaoDan table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .BiaoDan table tr:hover {
+            background-color: #f1f7ff;
+            transition: background-color 0.2s;
+        }
+
+/* 操作按钮区域 */
+.CaoZuoAnNiu {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    text-decoration: none;
+}

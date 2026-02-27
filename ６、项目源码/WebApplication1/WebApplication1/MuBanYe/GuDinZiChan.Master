@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GuDinZiChan.master.cs" Inherits="WebApplication1.MuBanYe.GuDinZiChan" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head runat="server">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>固定资产管理系统</title>
+
+		<!-- 引入jQuery -->
+		<script type="text/javascript" src="/MuBanYe/js/jquery-3.3.1.min.js"></script>
+        <link href="/MuBanYe/css/GuDinZiChan.css" rel="stylesheet" />
+
+		<asp:ContentPlaceHolder ID="head" runat="server">
+		</asp:ContentPlaceHolder>
+	</head>
+	<body>
+		<form id="form1" runat="server">
+			<!-- 顶部栏 -->
+			<div class="toubu">
+				<div class="Logo">
+					固定资产管理系统--员工界面
+				</div>
+
+				<div class="daohang">
+					<a href="/GuDinZiChan/ZhuTi.aspx">首页</a>
+					<a href="/GuDinZiChan/GuDinZiChanChaoZuo/ZiChanZhuTi.aspx">固定资产</a>
+					<a href="/GuDinZiChan/GuZiWeiXiu/GuZiWeiXiu.aspx">固定资产维修</a>
+					<a href="/GuDinZiChan/GuZiJieHuan/GuZiJieHuan.aspx">固定资产借还</a>
+					<a href="/GuDinZiChan/GuDingZiChanTongJi/ChaXunZaiKuZiChan.aspx">固定资产统计</a>
+				</div>
+
+				<!-- 修改为导航样式的用户操作区域 -->
+				<div class="tuichu">
+					<a href="/GuDinZiChan/GeRenZhongXin/GeRenXinXi.aspx">个人中心</a>
+					<asp:Label ID="Label1" runat="server" Text="|"></asp:Label>
+					<a href="/DengLu/TuiChu.aspx" onclick="return confirm('确定要退出登录吗？')">退出登录</a>
+				</div>
+			</div>
+
+			<!-- 主内容区域 -->
+			<div class="neirong">
+				<div class="kapian">
+					<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+					</asp:ContentPlaceHolder>
+				</div>
+			</div>
+
+			<!-- 底部区域 -->
+			<div class="yejiao">
+				<p>固定资产管理系统 © 2025 版权所有</p>
+				<p>技术支持电话：13872853622 | 服务邮箱：1442176552@qq.com</p>
+			</div>
+		</form>
+
+		<script type="text/javascript">
+            $(document).ready(function () {
+                // 为导航链接添加点击效果
+                $('.daohang a').on('click', function (e) {
+                    $('.daohang a').removeClass('active');
+                    $(this).addClass('active');
+                });
+
+                // 根据当前页面激活对应的导航链接
+                var currentPage = window.location.pathname.split('/').pop();
+                $('.daohang a').each(function () {
+                    var linkHref = $(this).attr('href');
+                    if (linkHref === currentPage) {
+                        $(this).addClass('active');
+                    }
+                });
+
+                // 动态添加active样式
+                if (!$('style:contains(".daohang a.active")').length) {
+                    $('<style>.daohang a.active { background-color: rgba(255, 255, 255, 0.2); }</style>').appendTo(
+                        'head');
+                }
+            });
+        </script>
+	</body>
+</html>

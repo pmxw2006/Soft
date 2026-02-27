@@ -1,0 +1,134 @@
+﻿/* 固定资产借还管理样式 */
+.MoKuaiBiaoTi, .CaoZuoQuBiaoTi {
+    border-bottom: 2px solid #2196f3; /* 蓝色主题 */
+}
+
+/* 借还状态样式 */
+.JieHuanZhuangTai {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ZhuangTaiJieChu {
+    background-color: #fff3cd; /* 借出用橙色 */
+    color: #856404;
+}
+
+.ZhuangTaiGuiHuan {
+    background-color: #d4edda; /* 归还用绿色 */
+    color: #155724;
+}
+
+/* 日期样式 */
+.RiQiZhi {
+    font-family: 'Consolas', monospace;
+    color: #666;
+}
+
+/* 公司名称样式 */
+.GongSiMingZhi {
+    font-weight: 500;
+    color: #1976d2; /* 蓝色主题 */
+}
+
+/* 数量样式 */
+.ShuLiangZhi {
+    font-weight: bold;
+    color: #388e3c; /* 绿色主题 */
+}
+
+/* 新增按钮样式 */
+.TianJiaHeChaXunPaiBan {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 15px; /* 增加两个按钮之间的间距 */
+}
+
+.XingZenYongHu a {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #2196f3; /* 蓝色主题 */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+    .XingZenYongHu a:hover {
+        background-color: #1976d2; /* 深蓝色hover */
+        box-shadow: 0 2px 5px rgba(33, 150, 243, 0.3);
+    }
+
+    /* 借出按钮特殊样式 */
+    .XingZenYongHu a.jiechu {
+        background-color: #ff9800; /* 借出按钮用橙色 */
+    }
+
+        .XingZenYongHu a.jiechu:hover {
+            background-color: #e68900;
+            box-shadow: 0 2px 5px rgba(255, 152, 0, 0.3);
+        }
+
+    /* 归还按钮特殊样式 */
+    .XingZenYongHu a.guihuan {
+        background-color: #4caf50; /* 归还按钮用绿色 */
+    }
+
+        .XingZenYongHu a.guihuan:hover {
+            background-color: #3d8b40;
+            box-shadow: 0 2px 5px rgba(76, 175, 80, 0.3);
+        }
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+    .DaHeZi {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .SouSuoTiaoJian {
+        flex: 1 1 200px;
+    }
+
+    .SouSuoShuRu {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .MoKuaiBiaoTi h2 {
+        font-size: 20px;
+    }
+
+    .SouSuoPaiBan {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .AnNiuXiao {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .BiaoDan table td {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .TianJiaHeChaXunPaiBan {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .XingZenYongHu a {
+        width: 100%;
+        text-align: center;
+    }
+}
